@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Blonde Venue Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Share Tech Mono', 'monospace'],
+                        display: ['Russo One', 'sans-serif'],
+                    },
+                    colors: {
+                        neonPink: '#FF0099',
+                        neonBlue: '#00F0FF',
+                        neonPurple: '#BD00FF',
+                        darkBg: '#050508',
+                        panelBg: 'rgba(20, 20, 35, 0.7)',
+                        surface: '#12121F',
+                        textMain: '#E0F0FF',
+                        textDim: '#8CA0B0',
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px)",
+                        'cyber-gradient': 'linear-gradient(135deg, #050508 0%, #1a1a2e 100%)',
+                    },
+                    boxShadow: {
+                        'neon-pink': '0 0 10px rgba(255, 0, 153, 0.5), 0 0 20px rgba(255, 0, 153, 0.2)',
+                        'neon-blue': '0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.2)',
+                        'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050508;
+            color: #E0F0FF;
+            overflow-x: hidden;
+        }
+        
+        .neon-card {
+            background: rgba(18, 18, 31, 0.6);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .neon-card:hover {
+            border-color: rgba(0, 240, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+            background: rgba(18, 18, 31, 0.8);
+        }
+
+        .neon-text-glow {
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+        }
+        
+        .neon-text-glow-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 153, 0.7);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            background: #050508;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #FF0099;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/band-venue-portal/assets/index-Cs3V8ucY.js"></script>
+</head>
+<body class="font-sans antialiased bg-cyber-gradient min-h-screen">
+    <div id="root"></div>
+</body>
+</html>
+    
